@@ -27,7 +27,6 @@
 
 	<div class="wrapper">
 		<div class="main-header">
-			<!-- Logo Header -->
 			<div class="logo-header" data-background-color="blue">
 				<a href="{{ url('/admin/dashboard') }}" class="logo">
 					<img src="{{ asset('assets/img/logo.svg') }}" alt="navbar brand" class="navbar-brand">
@@ -44,9 +43,7 @@
 					</button>
 				</div>
 			</div>
-			<!-- End Logo Header -->
 
-			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
 				<div class="container-fluid">
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
@@ -77,10 +74,8 @@
 					</ul>
 				</div>
 			</nav>
-			<!-- End Navbar -->
 		</div>
 
-		<!-- Sidebar -->
 		<div class="sidebar sidebar-style-2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
@@ -173,7 +168,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- End Sidebar -->
 
 		<div class="main-panel">
 			<div class="content">

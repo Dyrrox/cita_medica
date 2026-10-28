@@ -44,9 +44,6 @@
 					</button>
 				</div>
 			</div>
-			<!-- End Logo Header -->
-
-			<!-- Navbar Header -->
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
 				<div class="container-fluid">
 					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
@@ -77,10 +74,8 @@
 					</ul>
 				</div>
 			</nav>
-			<!-- End Navbar -->
 		</div>
 
-		<!-- Sidebar -->
 		<div class="sidebar sidebar-style-2">			
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
 				<div class="sidebar-content">
@@ -173,7 +168,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- End Sidebar -->
 
 		<div class="main-panel">
 			<div class="content">
@@ -395,7 +389,6 @@
 	<script src="{{ asset('assets/js/atlantis.min.js') }}"></script>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-	<!-- Script Único Consolidado -->
 	<script>
 		$(document).ready(function() {
 			if ($.fn.DataTable.isDataTable('#add-row')) {
@@ -424,7 +417,6 @@
 
     <script>
         $(document).ready(function() {
-            // Cuando cambie la especialidad seleccionada
             $('#codespe').on('change', function() {
                 var codespe = $(this).val();
                 var $doctorSelect = $('#coddoc');
@@ -434,7 +426,6 @@
                 $doctorSelect.append('<option value="">Seleccione...</option>');
 
                 if (codespe) {
-                    // Petición AJAX a Laravel
                     $.ajax({
                         url: "{{ url('/admin/doctors-by-specialty') }}/" + codespe,
                         type: 'GET',

@@ -20,12 +20,11 @@
         <div class="contenido-login">
 
             <form autocomplete="off" method="POST" action="{{ url('/login') }}" role="form">
-                @csrf <!-- Token de seguridad obligatorio en Laravel -->
+                @csrf 
 
                 <img src="{{ asset('assets/img/logo.png') }}" alt="">
                 <h2>Login</h2>
 
-                <!-- Mensajes de error -->
                 @if ($errors->any())
                     <div style="color:#FF0000;text-align:center;font-size:18px; margin-bottom: 15px;">
                         {{ $errors->first() }}
